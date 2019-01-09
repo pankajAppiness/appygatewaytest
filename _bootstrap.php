@@ -153,9 +153,7 @@ function proxyCall($path) {
 
     // get json payload from request
     $payload = getJsonPayload();
-print_r($payload); 
-    print_r($gatewayUrl . $path);
-    exit();
+    
     // proxy authenticated request
     $response = doRequest($gatewayUrl . $path, $_SERVER['REQUEST_METHOD'], $payload, $headers);
 
