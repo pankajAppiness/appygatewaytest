@@ -103,6 +103,9 @@ function error($code, $message) {
 
 function requiredQueryParam($param) {
     global $query;
+    print_r($query);
+    print_r($param);
+    exit();
 
     if (!array_key_exists($param, $query) || empty($query[$param])) {
         error(400, 'Missing required query param: ' . $param);
