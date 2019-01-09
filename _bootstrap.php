@@ -144,6 +144,10 @@ function outputJsonResponse($response) {
 }
 
 function proxyCall($path) {
+    echo (" merchant id: ".$merchantId);
+    echo (" password: ".$password);
+    echo (" region id: ".$region);
+    echo (" apiVersion id: ".$apiVersion);
     global $headers, $gatewayUrl;
 
     // get json payload from request
