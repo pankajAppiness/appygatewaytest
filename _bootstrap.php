@@ -149,16 +149,6 @@ function outputJsonResponse($response) {
 }
 
 function proxyCall($path) {
-    error (400," merchant id: ".$merchantId);
-    error (400," password: ".$password);
-    error (400," region id: ".$region);
-    error (400," apiVersion id: ".$apiVersion);
-    
-    print_r (" merchant id: ".$merchantId);
-    print_r (" password: ".$password);
-    print_r (" region id: ".$region);
-    print_r (" apiVersion id: ".$apiVersion);
-    
     global $headers, $gatewayUrl;
 
     // get json payload from request
