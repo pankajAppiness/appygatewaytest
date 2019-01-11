@@ -27,7 +27,7 @@ error_reporting('all');
 $merchantId = "TEST7006789";
 $password = "93ab52bb157a07e84827d3b26f3b99da";
 $region = "MTF";
-$apiVersion = "50";
+$apiVersion = "44";
 
 // merchant id must be TEST
 $merchantIdPrefix = substr($merchantId, 0, 4);
